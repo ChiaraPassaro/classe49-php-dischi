@@ -6,9 +6,9 @@ include __DIR__ . '/partials/head.php';
 ?>
 
 <body>
-  <div class="container">
+  <div id="app" class="container">
     <?php include __DIR__ . '/partials/header.php' ?>
-    <main id="app">
+    <main>
       <div class="cards-container">
         <div v-for="card in cards" class="card">
           <img :src="card.poster" />
@@ -22,6 +22,8 @@ include __DIR__ . '/partials/head.php';
     </main>
     <?php include __DIR__ . '/partials/footer.php' ?>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
